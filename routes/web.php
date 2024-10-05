@@ -21,7 +21,7 @@ use App\Http\Controllers\IndoRegionController;
 //     return view('welcome');
 // });
 
-Route::get('/form', [IndoRegionController::class, 'form']);
+Route::get('/', [IndoRegionController::class, 'form']);
 Route::post('/getkabupatens', [IndoRegionController::class, 'getkabupaten'])->name('getkabupatens');
 Route::post('/getkecamatan', [IndoRegionController::class, 'getkecamatan'])->name('getkecamatan');
 Route::post('/getdesa', [IndoRegionController::class, 'getdesa'])->name('getdesa');
